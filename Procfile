@@ -1,0 +1,1 @@
+web: gunicorn trelleborgs_tandklinik.wsgi --log-file -

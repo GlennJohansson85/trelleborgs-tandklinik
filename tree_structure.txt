@@ -1,0 +1,85 @@
+├── myproject/
+│   ├── manage.py
+│   ├── myproject/
+│   │   ├── __init__.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   ├── wsgi.py
+│   │   └── asgi.py
+│   ├── main/
+│   │   ├── migrations/
+│   │   │   └── __init__.py
+│   │   ├── static/
+│   │   │   └── main/
+│   │   │       ├── css/
+│   │   │       │   └── style.css
+│   │   │       ├── js/
+│   │   │       │   └── script.js
+│   │   │       └── images/
+│   │   │           └── logo.png
+│   │   ├── templates/
+│   │   │   └── main/
+│   │   │       └── index.html
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── models.py
+│   │   ├── tests.py
+│   │   └── views.py
+├── requirements.txt
+├── db.sqlite3
+
+# Innehåll i varje fil
+
+## settings.py (relevanta delar)
+INSTALLED_APPS = [
+    ...,
+    'main',
+    'django.contrib.staticfiles',
+]
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [BASE_DIR / 'main/static']
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [BASE_DIR / 'main/templates'],
+        ...
+    },
+]
+
+## urls.py
+from django.contrib import admin
+from django.urls import path
+from main import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', views.index, name='index'),
+]
+
+## views.py
+from django.shortcuts import render
+
+def index(request):
+    return render(request, 'main/index.html')
+
+## index.html
+(se innehållet vi redan lagt i denna fil)
+
+## style.css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Kompletterande CSS finns redan */
+
+## script.js
+console.log('Javascript is working');
+
+## requirements.txt
+django

@@ -1,0 +1,185 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Trelleborgs Tand & Implantatklinik {% endblock %}
+
+{% block content %}
+
+<!-- SECTION: INDEX-S1 -->
+<section class="index-s1">
+    <div class="index-s1-banner">
+        <div>
+            <p>
+                Välkommen till
+            <p>
+            <h1>
+                Trelleborgs Tand och Implantatklinik<br>
+                - Skräddarsydd tandvård
+            </h1>
+            <button class="btn btn-outline-light index-s1-btn" href="#">
+                Kampanj Blekning 1500:-
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION: INDEX-S2 -->
+<section class="index-s2">
+    <div class="container-fluid px-0">
+        <div class="row d-flex align-items-stretch g-0">
+            <!-- Left Column (Väkommen till...) -->
+            <div class="col-md-6 d-flex">
+                <div class="content-box index-s2-leftbox">
+                    <h3 class="mb-4">
+                        Trelleborgs Tand & Implantatklinik
+                    </h3>
+                    <p class="breadtext">
+                        Välkommen till Trelleborgs Tand och Implantatklinik! Vi är en toppmodern nyligen renoverad tandvårdsklinik en liten bit norr om centrum i Trelleborg. Vi tar emot nya patienter och erbjuder allmäntandvård, estetisk tandvård, röntgenundersökningar och implantatbehandlingar.
+                    </p>
+                    <p class="breadtext">
+                        Här arbetar tandläkare Anders Wagner och Jessica Ralvert, tandhygienist Melanie Johansson och tandsköterskorna Marie Mårtensson, Titti Bengtsson och Petra Gahne.
+                    </p>
+                    <button class="btn btn-outline-light index-s2-leftbox-btn" href="#">
+                        BOKA TID
+                    </button>
+                </div>
+            </div>
+            <!-- Right Column (Aktuell Information...) -->
+            <div class="col-md-6 d-flex">
+                <div class="content-box index-s2-rightbox">
+                    <h3 class="mb-4">
+                        Aktuell information om öppettider
+                    </h3>
+                    <ul class="index-s2-rightbox-ul">
+                        <li>Måndag 08:00–17:30</li>
+                        <li>Tisdag 08:00–13:30</li> 
+                        <li>Onsdag 08:00–17:30</li>
+                        <li>Torsdag 08:00–17:30</li>
+                        <li>Fredag 08:00–13:00</li>
+                    </ul>
+                    <br>
+                    <p>
+                        Telefontid 08:00–13:00
+                    </p>
+                    <p class="index-s2-rightbox-text">
+                        Hänvisar till
+                        <a class="index-s2-rightbox-link" href="https://www.1177.se" target="_blank" rel="noopener">1177</a>
+                        då vi håller stängt.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION: INDEX-S3 -->
+<section class="index-s3">
+    <div class="container-fluid px-0">
+        <div class="row d-flex align-items-stretch g-0">
+            <!-- Left Column (Img Dentist Personal) -->
+            <div class="col-md-6 d-flex">
+                <div class="content-box index-s3-leftbox"></div>
+            </div>
+            <!-- Right Column -->
+            <div class="col-md-6 d-flex">
+                <div class="content-box index-s3-rightbox">
+                    <h3 class="mb-4">
+                        Behandlingar
+                    </h3>
+                    <p class="breadtext">
+                        Hos oss kan du få hjälp med dina tänder och munhälsa. På mottagningen utför vi allmäntandvård men vi har också valt att inrikta oss mot estetisk tandvård och implantatbehandlingar (detta kan du läsa mer om i flikarna ovan).
+                    </p>
+                    <p class="breadtext">
+                        Vi har nyligen investerat i en avancerad röntgenutrustning och kan därför erbjuda samma undersökningar som tidigare gjordes på Lasarettet men med en mycket lägre stråldos. Vi tar gärna emot remisser för implantatinstallationer och röntgenundersökningar. Vi har panorama och CBCT (3D röntgen).
+                    </p>
+                    <button class="btn btn-outline-light index-s3-leftbox-btn" href="#">
+                        Läs mer om våra behandlingar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION: INDEX-S4 -->
+<section class="index-s4">
+    <div class="container-fluid px-0">
+        <div class="row d-flex align-items-stretch g-0">
+            <!-- Left Column -->
+            <div class="col-md-4 d-flex">
+                <div class="content-box index-s4-box">
+                    <img class="index-s4-box-img" src="{% static 'images/friends-2.png' %}" alt="friends icon">
+                    <h3 class="mb-4">
+                        Om oss
+                    </h3>
+                    <p class="breadtext">
+                        Här arbetar tandläkare Anders Wagner och Jessica Ralvert, tandhygienist Melanie Johansson och tandsköterskorna Marie Mårtensson, Titti Bengtsson och Petra Gahne! 
+                    </p>
+                    <button class="btn btn-outline-light index-s4-box-btn" href="#">
+                        Läs mer om oss
+                    </button>
+                </div>
+            </div>
+            <!-- Middle Column -->
+            <div class="col-md-4 d-flex">
+                <div class="content-box index-s4-box">
+                    <img class="index-s4-box-img" src="{% static 'images/star-1.png' %}" alt="star icon">
+                    <h3 class="mb-4">
+                        För vårdgivare
+                    </h3>
+                    <p class="breadtext">
+                        Vi tar emot remisser för röntgen, vi har korta väntetider för både Panorama-röntgen och CBCT. Vi tar även emot remisser för implantatkirurgi.
+                    </p>
+                    <button class="btn btn-outline-light index-s4-box-btn" href="#">
+                        Mer för vårdgivare
+                    </button>
+                </div>
+            </div>
+            <!-- Right Column -->
+            <div class="col-md-4 d-flex">
+                <div class="content-box index-s4-box">
+                    <img class="index-s4-box-img" src="{% static 'images/phone.png' %}" alt="phone icon">
+                    <h3 class="mb-4">
+                        Kontakta oss
+                    </h3>
+                    <p class="breadtext">
+                        Vi har öppet måndagar, onsdagar och torsdagar från 08.00 till 17.30. På tisdagar och fredagar har vi öppet 08.00 till 14.00. Du hittar alla våra kontaktuppgifter genom att följa länken nedan.
+                    </p>
+                    <button class="btn btn-outline-light index-s4-box-btn" href="#">
+                        Kontakta oss
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="index-s5">
+    <h3>Vad säger våra kunder?</h3>
+    <div id="reviews-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <p class="text-center">Fantastisk klinik!</p>
+            </div>
+            <div class="carousel-item">
+                <p class="text-center">Rekommenderas starkt.</p>
+            </div>
+            <div class="carousel-item">
+                <p class="text-center">Professionella och vänliga.</p>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#reviews-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#reviews-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</section>
+
+
+
+</body>
+
+{% endblock %}
