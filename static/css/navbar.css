@@ -1,6 +1,9 @@
 
 /*                                                      NAVBAR */
 .navbar {
+    width:              1200px;
+    margin:             0 auto;
+    z-index:            1030;
     font-family:        "RobotoSlab-Regular", "serif", "Arial, sans-serif";
     background-color:   #2d6a43;
     display:            flex;
@@ -105,8 +108,6 @@
 .nav-link:hover::after {
     transform: scaleX(1);
 }
-
-
 
 
 /*                                                      NAV-ICON (Phone & Envelope) */

@@ -6,121 +6,121 @@
 
 {% block header %}
 <header>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
         <!-- NAVBAR-BRAND -->
-            <a class="navbar-brand" href="{% url 'index' %}">TRELLEBORGS TANDKLINIK</a>
+        <a class="navbar-brand" href="{% url 'index' %}">TRELLEBORGS TANDKLINIK</a>
 
-            <!-- TOGGLER -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-chevron-down"></i>
-            </button>
+        <!-- TOGGLER -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-chevron-down"></i>
+        </button>
 
-            <!-- NAV-LINKS -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- MIDDLE -->
-                <ul class="navbar-nav mx-auto">
-                    <!-- Hem - Link -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'index' %}">HEM</a>
-                    </li>
-                    <!-- Behandlingar - Dropdown link -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">BEHANDLINGAR</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#">ALLMÄNTANDVÅRD</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">TANDHYGIENIST</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">PROTETIK</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">IMPLANTANT</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">ESTETISK TANDVÅRD</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">RÖNTGEN</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">AVTRYCK</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">SNARKSKENA</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- För vårdgivare - Dropdown link -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">FÖR VÅRDGIVARE</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#">PROTETIK</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">RÖNTGEN</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- Policys och information - Dropdown link -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">POLICYS OCH INFORMATION</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#">PATIENTINFORMATION</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">INTEGRITETSPOLICY</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- Om oss -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="">OM OSS</a>
-                    </li>
-                    <!-- Kontakta oss - Dropdown link -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">KONTAKTA OSS</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#">PARKERING</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- Mina sidor -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="">MINA SIDOR</a>
-                    </li>
-                </ul>
-                <!-- RIGHT -->
-                <ul class="navbar-nav ms-auto">
-                    <!-- btn-boka (Boka nu) -->
-                    <li class="nav-item">
-                        <a class="btn btn-outline-light btn-boka" href="#">Boka nu</a>
-                    </li>
-                    <!-- fas fa-phone nav-icon -->
-                    <li>
-                        <a href="">
-                            <i class="fas fa-phone nav-icon"></i>
-                        </a>
-                    </li>
-                    <!-- fas fa-envelope nav-icon -->
-                    <li>
-                        <a href="">
-                            <i class="fas fa-envelope nav-icon"></i>
-                        </a>
-                    </li>
-                </ul>
+        <!-- NAV-LINKS -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- MIDDLE -->
+            <ul class="navbar-nav mx-auto">
+                <!-- Hem - Link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">HEM</a>
+                </li>
+                <!-- Behandlingar - Dropdown link -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">BEHANDLINGAR</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">ALLMÄNTANDVÅRD</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">TANDHYGIENIST</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">PROTETIK</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">IMPLANTANT</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">ESTETISK TANDVÅRD</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">RÖNTGEN</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">AVTRYCK</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">SNARKSKENA</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- För vårdgivare - Dropdown link -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">FÖR VÅRDGIVARE</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">PROTETIK</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">RÖNTGEN</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Policys och information - Dropdown link -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">POLICYS OCH INFORMATION</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">PATIENTINFORMATION</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">INTEGRITETSPOLICY</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Om oss -->
+                <li class="nav-item">
+                    <a class="nav-link" href="">OM OSS</a>
+                </li>
+                <!-- Kontakta oss - Dropdown link -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">KONTAKTA OSS</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">PARKERING</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Mina sidor -->
+                <li class="nav-item">
+                    <a class="nav-link" href="">MINA SIDOR</a>
+                </li>
+            </ul>
+            <!-- RIGHT -->
+            <ul class="navbar-nav ms-auto">
+                <!-- btn-boka (Boka nu) -->
+                <li class="nav-item">
+                    <a class="btn btn-outline-light btn-boka" href="#">Boka nu</a>
+                </li>
+                <!-- fas fa-phone nav-icon -->
+                <li>
+                    <a href="">
+                        <i class="fas fa-phone nav-icon"></i>
+                    </a>
+                </li>
+                <!-- fas fa-envelope nav-icon -->
+                <li>
+                    <a href="">
+                        <i class="fas fa-envelope nav-icon"></i>
+                    </a>
+                </li>
+            </ul>
 
-            </div>
         </div>
-    </nav>
+    </div>
+</nav>
 </header>
 {% endblock %}
 
