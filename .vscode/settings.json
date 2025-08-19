@@ -1,0 +1,26 @@
+{
+    "editor.defaultFormatter": "chouzz.vscode-better-align",
+    "workbench.settings.editor": "json",
+    "editor.aiStats.enabled": true,
+    "editor.allowVariableFontsInAccessibilityMode": true,
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingComments": "always",
+    "editor.autoIndentOnPaste": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.codeActions.triggerOnFocusChange": true,
+    "editor.fontFamily": "Jetbrains Mono",
+    "editor.formatOnPaste": true,
+    "diffEditor.hideUnchangedRegions.contextLineCount": 5,
+    "workbench.activityBar.location": "top",
+    "workbench.colorTheme": "31d5574d-f56b-408f-81dc-9d44feeb62c2",
+    "workbench.preferredDarkColorTheme": "31d5574d-f56b-408f-81dc-9d44feeb62c2",
+    "workbench.preferredHighContrastColorTheme": "31d5574d-f56b-408f-81dc-9d44feeb62c2",
+    "workbench.preferredHighContrastLightColorTheme": "3546f7be-b84f-4b8e-8cad-effa3f4603af",
+    "workbench.iconTheme": "ayu",
+    "workbench.statusBar.visible": true,
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.view.alwaysShowHeaderActions": true,
+    "workbench.editor.autoLockGroups": {
+        "workbench.editor.chatSession": false
+    }
+}

@@ -1,42 +1,47 @@
 
 /*                                                      NAVBAR */
 .navbar {
-    width:              1200px;
-    margin:             0 auto;
-    z-index:            1030;
-    font-family:        "RobotoSlab-Regular", "serif", "Arial, sans-serif";
-    background-color:   #2d6a43;
-    display:            flex;
-    justify-content:    space-between;
-    padding:            1em;
-    box-shadow:         0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    z-index         : 1000;
+    font-family     : "RobotoSlab-Regular", "serif", "Arial, sans-serif";
+    background-color: #2d6a43;
+    display         : flex;
+    justify-content : space-between;
+    padding         : 1em;
+    box-shadow      : 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 
 
 /*                                                      NAVBAR-BRAND */
 .navbar-brand {
-    font-size: 14px;
-    line-height: 1;
-    position: relative;
-    color: white;
+    font-size      : 14px;
+    line-height    : 1;
+    position       : relative;
+    color          : white;
     text-decoration: none;
-    overflow: hidden;
-    display: inline-flex;
-    align-items: center;
+    overflow       : hidden;
+    display        : inline-flex;
+    align-items    : center;
 }
 
 .navbar-brand::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
+    content         : "";
+    position        : absolute;
+    left            : 0;
+    bottom          : 0;
+    width           : 100%;
+    height          : 1px;
     background-color: white;
-    transform: scaleX(0);
+    transform       : scaleX(0);
     transform-origin: left;
-    transition: transform 0.3s ease;
+    transition      : transform 0.3s ease;
 }
 
 .navbar-brand:hover {
@@ -49,55 +54,55 @@
 
 /*                                                      NAVBAR-TOGGLER */
 .navbar-toggler {
-    border: none;
+    border          : none;
     background-color: transparent;
-    color: #FFF;
-    font-size: 18px;
+    color           : #FFF;
+    font-size       : 18px;
 }
 
 /*                                                      NAVBAR-TOGGLER FOCUS */
 .navbar-toggler:focus {
-    outline: none;
+    outline   : none;
     box-shadow: 0 0 5px #01F16D;
 }
 
 /*                                                      NAV-ITEM DROPDOWN */
 /* Make dropdown visible on hover */
 .nav-item.dropdown:hover .dropdown-menu {
-    display: block;
+    display   : block;
     margin-top: 0;
 }
 
 /* ensure the dropdown doesn't collapse instantly */
 .dropdown-menu {
-    font-size: 12px;
+    font-size : 12px;
     transition: all 0.3s ease-in-out;
 }
 
 
 /*                                                      NAV-LINK */
 .nav-link{
-    font-size: 12px;
-    line-height: 1;
-    position: relative;
-    color: white;
+    font-size      : 12px;
+    line-height    : 1;
+    position       : relative;
+    color          : white;
     text-decoration: none;
-    overflow: hidden;
-    display: inline-flex;
-    align-items: center; /* vertically center content and caret */
+    overflow       : hidden;
+    display        : inline-flex;
+    align-items    : center;       /* vertically center content and caret */
 }
 
 .nav-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
+    content         : "";
+    position        : absolute;
+    left            : 0;
+    bottom          : 0;
+    width           : 100%;
+    height          : 1px;
     background-color: white;
-    transform: scaleX(0);
+    transform       : scaleX(0);
     transform-origin: left;
-    transition: transform 0.4s ease;
+    transition      : transform 0.4s ease;
 }
 
 /* Hover states */
@@ -113,31 +118,31 @@
 /*                                                      NAV-ICON (Phone & Envelope) */
 .nav-icon {
     margin-left: 5px;
-    padding: 10px;
-    color: #FFF;
+    padding    : 10px;
+    color      : #FFF;
 }
 
 /*                                                      NAV-ICON (Phone & Envelope) HOVER */
 .nav-icon:hover {
-    color: #FFF;
-    text-decoration: underline;
+    color                : #FFF;
+    text-decoration      : underline;
     text-underline-offset: 6px;
 }
 
 
 /*                                                      BTN-BOKA (Boka nu) */
 .btn-boka {
-    border: 1px solid white;
-    color: white;
+    border          : 1px solid white;
+    color           : white;
     background-color: transparent;
-    transition: all 0.2s ease-in-out;
+    transition      : all 0.2s ease-in-out;
 }
 
 /*                                                      BTN-BOKA (Boka nu) HOVER */
 .btn-boka:hover {
     background-color: white;
-    color: #2d6a43;
-    text-decoration: none;
+    color           : #2d6a43;
+    text-decoration : none;
 }
 
 /*                                                      SMALL SCREENS */
@@ -146,12 +151,12 @@
         font-size: 10px;
     }
     .nav-icon {
-        width: 18px;
+        width : 18px;
         height: 18px;
     }
     .btn-boka {
         font-size: 12px;
-        padding: 0.25rem 0.5rem;
+        padding  : 0.25rem 0.5rem;
     }
 }
 

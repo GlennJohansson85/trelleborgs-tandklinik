@@ -1,69 +1,63 @@
 {% load static %}
-
 {% block extra_css %}
     <link href="{% static 'css/footer.css' %}" rel="stylesheet" type="text/css"/>
 {% endblock %}
-
 {% block header %}
-<footer class="footer">
-    <div class="container-fluid px-0">
-        <div class="row d-flex align-items-stretch g-0">
-
-            <!-- Öppettider -->
-            <div class="col-md-3 d-flex">
-                <div class="content-box footer-box">
-                    <img class="footer-box-img" src="{% static 'images/clock.png' %}" alt="">
-                    <h4 class="mb-4">
-                        Öppettider
-                    </h4>
-                    <p class=footer-text>
-                        Vi har öppet måndagar, onsdagar och torsdagar från 08.00 till 17.30. På tisdagar och fredagar har vi öppet 08.00 till 14.00.
-                    </p>
+    <footer class="footer">
+        <div class="container-fluid px-0">
+            <div class="row d-flex align-items-stretch g-0">
+                <!-- Öppettider -->
+                <div class="col-md-3 d-flex">
+                    <div class="content-box footer-box">
+                        <img class="footer-box-img" src="{% static 'images/clock.png' %}" alt="">
+                        <h4 class="mb-4">
+                            Öppettider
+                        </h4>
+                        <p class=footer-text>
+                            Vi har öppet måndagar, onsdagar och torsdagar från 08.00 till 17.30. På tisdagar och fredagar har vi öppet 08.00 till 14.00.
+                        </p>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Adress -->
-            <div class="col-md-3 d-flex">
-                <div class="content-box footer-box">
-                    <img class="footer-box-img" src="{% static 'images/maps.png' %}" alt="">
-                    <h4 class="mb-4">
-                        Adress
-                    </h4>
-                    <p class=footer-text>
-                        Hedvägen 32A,
-                        231 52 Trelleborg
-                    </p>
+                <!-- Adress -->
+                <div class="col-md-3 d-flex">
+                    <div class="content-box footer-box">
+                        <img class="footer-box-img" src="{% static 'images/maps.png' %}" alt="">
+                        <h4 class="mb-4">
+                            Adress
+                        </h4>
+                        <p class=footer-text>
+                            Hedvägen 32A,
+                            231 52 Trelleborg
+                        </p>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Kontakta oss -->
-            <div class="col-md-3 d-flex">
-                <div class="content-box footer-box">
-                    <img class="footer-box-img" src="{% static 'images/phone-white.png' %}" alt="">
-                    <h4 class="mb-4">
-                        Kontakta oss
-                    </h4>
-                    <p class=footer-text>
-                        0410-416 90
-                        bokatid@tandlakare.net
-                    </p>
+                <!-- Kontakta oss -->
+                <div class="col-md-3 d-flex">
+                    <div class="content-box footer-box">
+                        <img class="footer-box-img" src="{% static 'images/phone-white.png' %}" alt="">
+                        <h4 class="mb-4">
+                            Kontakta oss
+                        </h4>
+                        <p class=footer-text>
+                            0410-416 90
+                            bokatid@tandlakare.net
+                        </p>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Patientinformation -->
-            <div class="col-md-3 d-flex">
-                <div class="content-box footer-box">
-                    <img class="footer-box-img" src="{% static 'images/i-1.png' %}" alt="">
-                    <h4 class="mb-4">
-                        Patientinformation
-                    </h4>
-                    <p class=footer-text>
-                        Läs mer om vår Patientinformation här >>
-                    </p>
+                <!-- Patientinformation -->
+                <div class="col-md-3 d-flex">
+                    <div class="content-box footer-box">
+                        <img class="footer-box-img" src="{% static 'images/i-1.png' %}" alt="">
+                        <h4 class="mb-4">
+                            Patientinformation
+                        </h4>
+                        <p class=footer-text>
+                            Läs mer om vår Patientinformation här >>
+                        </p>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 {% endblock %}
