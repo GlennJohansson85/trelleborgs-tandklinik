@@ -12,7 +12,7 @@
 /*                                                      GENERAL STYLES */
 html {
     height          : 100%;
-    background-color: #f0e9d3;
+    background-color: #fffbee;
 }
 
 body {
@@ -20,7 +20,7 @@ body {
     max-width     : 1200px;
     width         : 100%;
     margin        : 0 auto;
-    padding-top   : 40px;                  /* behåll bara detta */
+    padding-top   : 40px;
     display       : flex;
     flex-direction: column;
     font-family   : "RobotoSlab-Regular";
@@ -47,16 +47,18 @@ section {
 
 /*                                                      index-s1-banner */
 .index-s1-banner {
-    font-family     : "RobotoSlab-Regular";
-    background-image: url('/static/images/banner.png');
-    height          : 400px;
-    color           : #fff;
-    text-shadow     : 1px 1px 1px#000;
-    background-size : cover;
-    display         : flex;
-    justify-content : center;
-    align-items     : center;
-    text-align      : center;
+    font-family        : "RobotoSlab-Regular";
+    background-image   : url('/static/images/banner.png');
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: top center; /* Dentists faces are shown */
+    height             : 400px;
+    color              : #fff;
+    text-shadow        : 1px 1px 1px #000;
+    display            : flex;
+    justify-content    : center;
+    align-items        : center;
+    text-align         : center;
 }
 /* Button - Kampanj Blekning 1500:- */
 .index-s1-btn {
@@ -147,18 +149,20 @@ section {
 /*                                                      index-s3-leftbox Bild på personal */
 .index-s3-leftbox {
     background-image   : url('/static/images/p5.png');
-    background-size    : cover;
     background-repeat  : no-repeat;
-    background-position: center;
-    height             : 400px;
+    background-size    : cover;
+    background-position: center center;
     width              : 100%;
+    height             : auto;
+    min-height         : 400px; /* Grundhöjd på desktop */
     flex               : 1;
 }
+
 /*                                                      index-s3-rightbox "Behandlingar" */
 .index-s3-rightbox {
     display        : flex;
     flex-direction : column;
-    justify-content: center;
+    justify-content: top center;
     align-items    : center;
     text-align     : center;
     padding        : 3rem;
@@ -216,19 +220,84 @@ section {
 
 /************************************************************* RESPONSIVE SETTINGS */
 @media (max-width: 768px) {
-    /* Remove green line due to it looks good only for bigger screens */
+    /*---------------------------- FONT-SIZE */
+    h1 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    /*---------------------------- BTN-SIZE */
+    .index-s1-btn,
+    .index-s2-leftbox-btn,
+    .index-s3-leftbox-btn,
+    .index-s4-box-btn {
+        font-size: 12px;
+    }
+
+    .index-s1-banner {
+        height             : 400px; /* kortare höjd på små skärmar */
+        background-position: center top; /* fokus på övre delen av bilden */
+        background-size    : cover; /* bibehåll proportioner */
+        padding            : 1rem;
+    }
+
+    .index-s2-rightbox-ul {
+        font-size: 12px;
+    }
+
+    /* Remove green border-bottom */
     .index-s3 {
         border-bottom: none;
     }
 
-    /* Remove white space for smaller screens */
-    .index-s4-box {
-        height: 250px;
+    /* Blue Dentists */
+    .index-s3-leftbox {
+        height             : 300px;
+        background-size    : cover; /* visa hela bilden utan beskärning */
+        background-position: center center;
     }
 
+    .index-s4-box {
+        display        : flex;
+        flex-direction : column;
+        justify-content: flex-start; /* Viktigt: hindrar ikonen från att tryckas mot mitten */
+        align-items    : center;
+        text-align     : center;
+        padding        : 1rem 1.5rem;
+        height         : auto; /* Viktigt: låt höjden anpassas till innehållet */
+    }
+
+    .index-s4-box-img {
+        height       : 60px;
+        width        : 60px;
+        margin-bottom: 10px;
+        position     : static; /* Viktigt: tar bort eventuell överlappning */
+        transform    : none;
+        z-index      : 1;
+    }
+
+    .index-s4-box h3 {
+        margin-top   : 0;
+        margin-bottom: 15px;
+        position     : relative;
+        z-index      : 2;
+    }
+
+    .index-s4-box p,
     .index-s4-box-btn {
-        margin-top   : auto;
-        margin-bottom: 0;
+        position: relative;
+        z-index : 2;
     }
 }
 

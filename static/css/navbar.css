@@ -1,9 +1,9 @@
 
 /*                                                      NAVBAR */
 .navbar {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
+    max-width       : 1200px;
+    margin          : 0 auto;
+    width           : 100%;
     position        : fixed;
     top             : 0;
     left            : 0;
@@ -129,10 +129,10 @@
     text-underline-offset: 6px;
 }
 
-
 /*                                                      BTN-BOKA (Boka nu) */
 .btn-boka {
     border          : 1px solid white;
+    border-radius: 2px;
     color           : white;
     background-color: transparent;
     transition      : all 0.2s ease-in-out;
@@ -148,7 +148,7 @@
 /*                                                      SMALL SCREENS */
 @media (max-width: 768px) {
     .nav-link {
-        font-size: 10px;
+        font-size: 12px;
     }
     .nav-icon {
         width : 18px;

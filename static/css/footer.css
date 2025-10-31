@@ -9,7 +9,7 @@
     flex-direction : column;
     justify-content: flex-start; /* Changed from center to start for consistency */
     align-items    : center;
-    padding        : 2rem;
+    padding        : 1rem 2rem;
     text-align     : center;
     height         : 100%;
 }
@@ -22,11 +22,18 @@
 }
 
 .footer h4 {
-    font-size    : 1.2rem;
+
     margin-bottom: 1.5rem;
 }
 
 .footer-text {
-    font-size  : 0.95rem;
+
     line-height: 1.5;
+}
+
+/************************************************************* RESPONSIVE SETTINGS */
+@media (max-width: 768px) {
+    .footer {
+        font-size: 12px;
+    }
 }
